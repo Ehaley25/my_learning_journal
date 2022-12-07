@@ -1,0 +1,79 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Karla', sans-serif;
+    font-family: 'Open Sans', sans-serif;
+    font-family: 'Roboto', sans-serif;
+    font-family: 'Smythe', cursive;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+.container{
+    width: 90%;
+    margin: 0 auto;
+}
+header{
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size:  0.75rem;
+    padding: 1em 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    line-height: 15px;
+    text-transform: uppercase;
+}
+header ul{
+    list-style: none;
+    display: flex;
+    gap: 2em;
+}
+img[src="images/logo.png"]{
+    max-width: 200px;
+    width: 35vw ;
+}
+.my-journey{
+    background-image: url("images/macbook.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    color:#FFFFFF;
+    padding: 3.5em 0em 1.5em 0em;
+}
+.my-journey h1{
+    font-weight: 700;
+    margin: .2em 0;
+}
+.p-typography{
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 20px;
+    color: #505050;
+}
+.blog-1,.blog-2,.blog-3{
+    margin-top: 2em;
+}
+.date{
+    margin:  0.5625em 0 0.875em 0;
+}
+.blog-title{
+    margin-bottom: 0.5625em;
+}
+@media (min-width:600px){
+    .my-journey{
+        height: 43vh;
+        display: flex;
+        justify-content: flex-end;
+        padding-bottom: 4em ;
+        flex-direction: column;
+    }
+    .my-journey p{
+        max-width: 500px;
+    }
+    .my-grid{
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(200px, 500px));
+        grid-template-rows: 1fr 1fr;
+        grid-gap:1em;
+    }
+}
