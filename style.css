@@ -31,6 +31,12 @@ img[src="images/logo.png"]{
     max-width: 200px;
     width: 35vw ;
 }
+.my-grid{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, auto));
+    grid-gap: 4em ;
+
+}
 .my-journey{
     background-image: url("images/macbook.jpg");
     background-size: cover;
@@ -60,7 +66,12 @@ img[src="images/logo.png"]{
     margin-bottom: 0.5625em;
 }
 @media (min-width:600px){
+    .container{
+        width: 60%;
+    }
     .my-journey{
+        margin: 0 auto;
+        width: 60%;
         height: 43vh;
         display: flex;
         justify-content: flex-end;
@@ -69,11 +80,5 @@ img[src="images/logo.png"]{
     }
     .my-journey p{
         max-width: 500px;
-    }
-    .my-grid{
-        display: grid;
-        grid-template-columns: repeat(auto-fill, minmax(200px, 500px));
-        grid-template-rows: 1fr 1fr;
-        grid-gap:1em;
     }
 }
