@@ -1,6 +1,7 @@
 *{
     margin: 0;
     padding: 0;
+    border: 1px solid red;
     box-sizing: border-box;
     font-family: 'Karla', sans-serif;
     font-family: 'Open Sans', sans-serif;
@@ -34,10 +35,11 @@ img[src="images/logo.png"]{
 .my-grid{
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, auto));
-    grid-gap: 4em ;
+    grid-gap: 1em 4em ;
     align-items: baseline;
 }
 .blog img{
+    display: block;
     height: 50%;
     width: 100%;
     object-fit: cover;
