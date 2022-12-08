@@ -8,9 +8,19 @@
     font-family: 'Smythe', cursive;
     font-family: 'Source Sans Pro', sans-serif;
 }
-.container, .journey{
+.container,.big-container{
     width: 90%;
     margin: 0 auto;
+}
+main .container p, h3{
+    line-height: 20px;
+    margin-top: 1.5em;
+}
+.big-container{
+    margin-bottom: 3em;
+}
+.big-container h1{
+    margin: .5em 0em;
 }
 
 header{
@@ -27,10 +37,6 @@ header ul{
     list-style: none;
     display: flex;
     gap: 2em;
-}
-header a{
-    color: black;
-    text-decoration: none;
 }
 img[src="images/logo.png"]{
     max-width: 200px;
@@ -106,30 +112,6 @@ img[src="images/logo.png"]{
         max-width: 420px ;
     }
 }
-@media (min-width:1387px){
-    .big-container{
-        margin: 0em;
-    }
-    .container, .journey {
-        width: 90%;
-        margin: 0;
-    }
-}
-.container,.big-container{
-    width: 90%;
-    margin: 0 auto;
-}
-main .container p, h3{
-    line-height: 20px;
-    margin-top: 1.5em;
-}
-.big-container{
-    margin-bottom: 3em;
-}
-.big-container h1{
-    margin: .5em 0em;
-}
-
 @media(min-width:738px){
     .big-container{
         display: flex;
@@ -167,6 +149,7 @@ footer{
     bottom: 0;
     width: 100%; */
 }
+
 .popular{
     text-align: center;
     margin-top: 1.5em;
