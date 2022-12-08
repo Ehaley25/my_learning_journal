@@ -28,7 +28,7 @@ header ul{
     display: flex;
     gap: 2em;
 }
-header a{
+a{
     color: black;
     text-decoration: none;
 }
