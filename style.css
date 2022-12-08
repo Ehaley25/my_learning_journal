@@ -35,7 +35,10 @@ img[src="images/logo.png"]{
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, auto));
     grid-gap: 4em ;
-
+    align-items: baseline;
+}
+.blog img{
+    width: 100%;
 }
 .my-journey{
     background-image: url("images/macbook.jpg");
@@ -56,7 +59,7 @@ img[src="images/logo.png"]{
     line-height: 20px;
     color: #505050;
 }
-.blog-1,.blog-2,.blog-3{
+.blog{
     margin-top: 2em;
 }
 .date{
@@ -65,20 +68,35 @@ img[src="images/logo.png"]{
 .blog-title{
     margin-bottom: 0.5625em;
 }
-@media (min-width:600px){
+@media (min-width:750px){
+    header li{
+        font-size:  .95rem;
+    }
     .container{
-        width: 60%;
+        max-width: 1389px;
     }
     .my-journey{
-        margin: 0 auto;
-        width: 60%;
+        max-width: 1389px;
         height: 43vh;
         display: flex;
         justify-content: flex-end;
         padding-bottom: 4em ;
         flex-direction: column;
+        margin: 0 auto;
     }
     .my-journey p{
         max-width: 500px;
     }
+}
+#view-more{
+    text-align: center;
+    margin: 2em 0em;
+}
+footer{
+    text-align: center;
+    margin-top: 3.125em;
+    padding: 2em;
+    color: white;
+    background-color: black;
+    align-items: center;
 }
